@@ -11,3 +11,9 @@ Given input array nums = [3,2,2,3], val = 3
 
 
 Your function should return length = 2, with the first two elements of nums being 2.
+
+在一个数组中移除制定值, 返回新数组长度, 不能新建一个数组
+
+例：
+给定输入数组nums = [3,2,2,3]，val = 3
+你的函数应该返回length = 2，num的前两个元素是2。
