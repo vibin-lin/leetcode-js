@@ -18,4 +18,5 @@ let fun = (nums,res)=>{
         }
     }
 }
+
 console.log(fun(nums, res));
