@@ -8,16 +8,3 @@
  * @param {number}
  * @returns {number}
  */
-let reverse = function (x) {
-    var flo;
-    x<0?flo=false:flo=true;
-    var a = Math.abs(x)+ '';
-    a = flo ? Number(a.split('').reverse().join('')) : -Number(a.split('').reverse().join(''))
-    if (a > Math.pow(2, 31) || -a > Math.pow(2, 31)) {
-        a = 0;
-    }
-    return a
-}
-
-
-console.log(reverse(-123123123123123))

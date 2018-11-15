@@ -1,22 +1,21 @@
-let nums = [1,2,3,4];
-let res = 4;
+let nums = [2,7,11,15]
+let target = 9
 
 /**
  * 
  * @param {number[]} nums
- * @param {number} res
+ * @param {number} target
  * @return {number[]} 
  */
-let fun = (nums,res)=>{
-    let map = {};
-    for(let i=0;i<nums.length;i++){
-        let a = nums[i];
-        for(let j = i+1;j<nums.length;j++){
-            if(nums[i] + nums[j] == res){
-                return [i,j];
-            }
-        }
-    }
-}
 
-console.log(fun(nums, res));
+// 暴力解法
+let twoSum = (nums,target)=>{
+  for(let i =0;i<nums.length;i++){
+    for(let j=i+1;j<nums.length;j++){
+      if(nums[i] + nums[j] === target){
+        return [i,j]
+      }
+    }
+  }
+}
+console.log(twoSum(nums,target))
